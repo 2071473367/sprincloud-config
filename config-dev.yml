@@ -1,17 +1,2 @@
-server:
-  port: 3344  # 端口号
-spring:
-  application:
-    name: cloud-config-center # 向外暴露的服务名称
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/2071473367/sprincloud-config.git
-          search-paths:
-            - springcloud-config  # git仓库名称
-      label: master # 对应仓库中的分支
-eureka:
-  client:
-    service-url:
-      defaultZone:  http://localhost:7001/eureka # 注册中心
+config:
+  info: springcloud-config master config-dev.yml
